@@ -92,10 +92,10 @@ export const footerLinks = [
   {
     title: "Socials",
     links: [
-      { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
-      { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
+      { title: "Portfolio", url: "https://nadim.vercel.app" },
+      { title: "Github", url: "https://github.com/nadim-chowdhury" },
+      { title: "Twitter", url: "https://twitter.com/nadim_ch0wdhury" },
+      { title: "Linkedin", url: "https://www.linkedin.com/in/nadim-chowdhury" },
     ],
   },
 ];
