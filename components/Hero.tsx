@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <div className="hero">
-      <div className="flex-1 pt-36">
+      <div className="flex-1 pt-10 sm:pt-32">
         <h1 className="hero__title">
           Find, book or rent any car quickly and easily!
         </h1>
@@ -18,11 +18,11 @@ export default function Hero() {
           process.
         </p>
 
-        <CustomButton
+        {/* <CustomButton
           title="Explore Cars"
-          containerStyles="bg-primary-blue text-white rounded-full mt-10"
+          containerStyles="bg-primary-blue text-white rounded-full mt-10 mx-auto"
           handleClick={handleScroll}
-        />
+        /> */}
       </div>
 
       <div className="hero__image-container">
@@ -33,9 +33,9 @@ export default function Hero() {
             fill
             className="object-contain"
           />
-
-          {/* <div className="hero__image-overlay" /> */}
         </div>
+
+        {/* <div className="hero__image-overlay" /> */}
       </div>
     </div>
   );
