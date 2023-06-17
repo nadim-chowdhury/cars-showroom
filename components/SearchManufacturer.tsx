@@ -21,7 +21,7 @@ export default function SearchManufacturer({ manufacturer, setManufacturer }) {
     <div className="search-manufacturer">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
-          <Combobox.Button className="absolute top-[14px]">
+          <Combobox.Button className="absolute top-[14px] pl-4">
             <Image src="/car-logo.svg" alt="" width={20} height={20} />
           </Combobox.Button>
 

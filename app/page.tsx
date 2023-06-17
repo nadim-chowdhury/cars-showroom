@@ -14,7 +14,7 @@ export default async function Home() {
       <Hero />
 
       <div className="mt-10 padding-y" id="discover">
-        <div className="home__text-container">
+        <div className="home__text-container text-center">
           <h3 className="text-3xl font-bold">Car Catalouge</h3>
           <p>Explore the cars You might like</p>
         </div>

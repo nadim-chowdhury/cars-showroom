@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { calculateCarRent } from "@/utils";
+import CarDetails from "./CarDetails";
 
 interface CarCardProps {
   car: CarProps;
@@ -12,6 +13,8 @@ interface CarCardProps {
 
 export default function CarCard({ car }: CarCardProps) {
   const { city_mpg, year, make, model, transmission, drive } = car;
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const carRent = calculateCarRent(city_mpg, year);
 
@@ -24,7 +27,7 @@ export default function CarCard({ car }: CarCardProps) {
       </div>
 
       <p className="flex mt-6 font-bold">
-        <span className="self-start">${carRent}</span>
+        <span className="self-start text-blue-500 text-2xl">${carRent}</span>
         <span className="self-end">/day</span>
       </p>
 
@@ -37,6 +40,39 @@ export default function CarCard({ car }: CarCardProps) {
           className="object-contain"
         />
       </div>
+
+      <div className="relative flex w-full mt-2">
+        <div className="flex group-hover:invisible w-full justify-between text-gray">
+          <div className="flex flex-col justify-center items-center gap-2">
+            <Image src="/steering-wheel.svg" alt="" width={20} height={20} />
+            <p className="text-[14px]">
+              {transmission === "a" ? "Autometic" : "Manual"}
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center gap-2">
+            <Image src="/tire.svg" alt="" width={20} height={20} />
+            <p className="text-[14px]">{drive.toUpperCase()}</p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center gap-2">
+            <Image src="/gas.svg" alt="" width={20} height={20} />
+            <p className="text-[14px]">{city_mpg} Mpg</p>
+          </div>
+        </div>
+
+        <div className="car-card__btn-container">
+          <CustomButton
+            title="View More"
+            containerStyles="w-full py-4 rounded-full bg-blue-500"
+            textStyles="text-white leading-4"
+            rightIcon="/right-arrow.svg"
+            handleClick={() => setIsOpen(true)}
+          />
+        </div>
+      </div>
+
+      <CarDetails />
     </div>
   );
 }
