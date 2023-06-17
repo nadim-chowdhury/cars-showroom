@@ -64,7 +64,7 @@ export default function SearchManufacturer({
                       {selected ? (
                         <span
                           className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                            active ? "text-white" : "text-teal-600"
+                            active ? "text-white" : "text-blue-500"
                           }`}
                         ></span>
                       ) : null}
