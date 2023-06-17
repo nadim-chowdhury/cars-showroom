@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative max-w-7xl mx-auto px-2">
+      <body className="relative max-w-7xl mx-auto px-4">
         <Navbar />
         {children}
         <Footer />

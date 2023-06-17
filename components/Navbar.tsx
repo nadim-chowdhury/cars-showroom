@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center py-4">
         <Link
           href="/"
-          className="flex justify-center items-center font-bold text-3xl sm:text-4xl"
+          className="flex justify-center items-center font-bold text-4xl bg-gradient-to-tr from-blue-600 to-blue-400 text-transparent bg-clip-text"
         >
           oCars
         </Link>
