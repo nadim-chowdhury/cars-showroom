@@ -13,9 +13,9 @@ export default function Navbar() {
         </Link>
 
         <CustomButton
-          title="Sign In"
+          title="Nadim"
           btnType="button"
-          containerStyles="text-primary-blue rounded-full bg-blue-100"
+          containerStyles="text-blue-500 rounded-full border"
         />
       </nav>
     </header>
