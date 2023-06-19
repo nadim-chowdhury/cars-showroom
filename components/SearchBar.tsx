@@ -18,7 +18,7 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
 );
 
 export default function SearchBar() {
-  const [manufacturer, setManufacturer] = useState("");
+  const [manufacturer, setManuFacturer] = useState("");
   const [model, setmodel] = useState("");
   const router = useRouter();
 
@@ -59,7 +59,7 @@ export default function SearchBar() {
       <div className="searchbar__item">
         <SearchManufacturer
           manufacturer={manufacturer}
-          setManufacturer={setManufacturer}
+          setManuFacturer={setManuFacturer}
         />
       </div>
 
